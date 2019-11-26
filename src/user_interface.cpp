@@ -5,27 +5,34 @@
 void user_interface::hello()
 {
     DEBUG_PRETTY_FUNCTION;
-    return this->printState();
+    return user_interface_origin::hello();
 }
 
 void user_interface::printState()
 {
     DEBUG_PRETTY_FUNCTION;
-    std::puts(std::to_string(m_state).c_str());
+    return user_interface_origin::printState();
 }
 
 bool user_interface::initialize(int state)
 {
-    m_state = state;
-    return true;
+    DEBUG_PRETTY_FUNCTION;
+    return user_interface_origin::initialize(state);
 }
 
 std::unique_ptr<user_interface> user_interface::create(int state)
 {
+    DEBUG_PRETTY_FUNCTION;
     auto user_interface_origin_ptr = std::unique_ptr<user_interface>(new user_interface);
     if (!user_interface_origin_ptr->initialize(0))
     {
         return nullptr;
     }
     return user_interface_origin_ptr;
+}
+
+void user_interface::printStateProxy()
+{
+    DEBUG_PRETTY_FUNCTION;
+    return this->printState();
 }

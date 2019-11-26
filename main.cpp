@@ -2,7 +2,8 @@
 
 int main()
 {
-    auto uio_ptr = user_interface::create(0);
-    uio_ptr->hello();
+    auto ui_ptr = user_interface::create(0);
+    ui_ptr->hello();
+    ui_ptr->printStateProxy();
     return 0;
 }
