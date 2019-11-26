@@ -6,7 +6,7 @@
 class user_interface
         : public user_interface_origin
 {
-    user_interface() = default;
+    user_interface() : m_state{-1}{};
 
     bool initialize(int state);
 
