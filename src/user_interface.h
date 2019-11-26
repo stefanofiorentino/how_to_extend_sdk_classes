@@ -16,7 +16,7 @@ class user_interface
 public:
     static std::unique_ptr<user_interface> create(int state);
 
-    void hello();
+    void hello() final;
     void printStateProxy();
 };
 

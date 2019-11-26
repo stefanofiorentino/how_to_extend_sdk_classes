@@ -16,7 +16,7 @@ class user_interface_origin
 public:
     static std::unique_ptr<user_interface_origin> create(int state);
 
-    void hello();
+    virtual void hello();
 
     friend class user_interface;
 };
