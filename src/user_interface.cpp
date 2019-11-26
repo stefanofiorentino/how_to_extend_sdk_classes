@@ -42,3 +42,13 @@ void user_interface::printStateProxy()
     DEBUG_PRETTY_FUNCTION;
     return this->printState();
 }
+
+int user_interface::getMAuth()
+{
+    return user_interface_origin::getMAuth();
+}
+
+void user_interface::setMAuth(int mAuth)
+{
+    return user_interface_origin::setMAuth(mAuth);
+}

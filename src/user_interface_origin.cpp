@@ -28,3 +28,15 @@ std::unique_ptr<user_interface_origin> user_interface_origin::create(int state)
     }
     return user_interface_origin_origin_ptr;
 }
+
+int user_interface_origin::getMAuth()
+{
+    return m_auth;
+}
+
+void user_interface_origin::setMAuth(int mAuth)
+{
+    m_auth = mAuth;
+}
+
+int user_interface_origin::m_auth = 0;
