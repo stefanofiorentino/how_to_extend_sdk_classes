@@ -5,7 +5,13 @@
 void user_interface::hello()
 {
     DEBUG_PRETTY_FUNCTION;
-    return user_interface_origin::hello();
+    /**
+     * write your pre-processing code here
+     */
+    user_interface_origin::hello();
+    /**
+     * write your post-processing code here
+     */
 }
 
 void user_interface::printState()
@@ -23,12 +29,12 @@ bool user_interface::initialize(int state)
 std::unique_ptr<user_interface> user_interface::create(int state)
 {
     DEBUG_PRETTY_FUNCTION;
-    auto user_interface_origin_ptr = std::unique_ptr<user_interface>(new user_interface);
-    if (!user_interface_origin_ptr->initialize(state))
+    auto user_interface_ptr = std::unique_ptr<user_interface>(new user_interface);
+    if (!user_interface_ptr->initialize(state))
     {
         return nullptr;
     }
-    return user_interface_origin_ptr;
+    return user_interface_ptr;
 }
 
 void user_interface::printStateProxy()
