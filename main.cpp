@@ -1,10 +1,8 @@
-#include <iostream>
-#include <memory>
 #include "src/user_interface.h"
 
 int main()
 {
-    std::shared_ptr<user_interface> ui = std::make_shared<user_interface>();
-    ui->hello();
+    auto uio_ptr = user_interface::create(0);
+    uio_ptr->hello();
     return 0;
 }

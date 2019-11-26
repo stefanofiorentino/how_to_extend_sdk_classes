@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/defines.h">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/main.cpp">
           <value>
             <set />
@@ -19,6 +24,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/user_interface.h">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/user_interface_origin.cpp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/user_interface_origin.h">
           <value>
             <set />
           </value>
