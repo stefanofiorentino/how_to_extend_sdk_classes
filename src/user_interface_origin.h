@@ -10,6 +10,8 @@ class user_interface_origin
     bool initialize(int state);
 
     int m_state;
+    static int m_auth;
+
     void printState();
 
 
@@ -17,6 +19,9 @@ public:
     static std::unique_ptr<user_interface_origin> create(int state);
 
     virtual void hello();
+
+    static int getMAuth();
+    static void setMAuth(int mAuth);
 
     friend class user_interface;
 };

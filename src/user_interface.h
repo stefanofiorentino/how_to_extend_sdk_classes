@@ -17,6 +17,10 @@ public:
     static std::unique_ptr<user_interface> create(int state);
 
     void hello() final;
+
+    static int getMAuth();
+    static void setMAuth(int mAuth);
+
     void printStateProxy();
 };
 
