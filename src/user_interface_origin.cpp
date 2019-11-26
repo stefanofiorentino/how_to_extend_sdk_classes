@@ -22,7 +22,7 @@ bool user_interface_origin::initialize(int state)
 std::unique_ptr<user_interface_origin> user_interface_origin::create(int state)
 {
     auto user_interface_origin_origin_ptr = std::unique_ptr<user_interface_origin>(new user_interface_origin);
-    if (!user_interface_origin_origin_ptr->initialize(0))
+    if (!user_interface_origin_origin_ptr->initialize(state))
     {
         return nullptr;
     }

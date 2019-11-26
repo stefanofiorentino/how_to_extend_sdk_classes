@@ -24,7 +24,7 @@ std::unique_ptr<user_interface> user_interface::create(int state)
 {
     DEBUG_PRETTY_FUNCTION;
     auto user_interface_origin_ptr = std::unique_ptr<user_interface>(new user_interface);
-    if (!user_interface_origin_ptr->initialize(0))
+    if (!user_interface_origin_ptr->initialize(state))
     {
         return nullptr;
     }
