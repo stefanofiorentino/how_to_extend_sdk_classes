@@ -1,0 +1,12 @@
+#ifndef HOW_TO_EXTEND_SDK_CLASSES_DEFINES_H
+#define HOW_TO_EXTEND_SDK_CLASSES_DEFINES_H
+
+#ifndef DEBUG_PRETTY_FUNCTION
+#ifndef NDEBUG
+#define DEBUG_PRETTY_FUNCTION { \
+std::puts(__PRETTY_FUNCTION__); \
+} while (0)
+#endif // #ifndef NDEBUG
+#endif // #ifndef DEBUG_PRETTY_FUNCTION
+
+#endif //HOW_TO_EXTEND_SDK_CLASSES_DEFINES_H

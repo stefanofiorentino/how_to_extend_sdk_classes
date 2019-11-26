@@ -1,12 +1,16 @@
 #include <iostream>
 #include "user_interface.h"
+#include "user_interface_origin.h"
+#include "../defines.h"
 
 void user_interface::hello()
 {
-    return this->printState();
+    DEBUG_PRETTY_FUNCTION;
+    return user_interface_origin::hello();
 }
 
 void user_interface::printState()
 {
-    std::puts(std::to_string(m_state).c_str());
+    DEBUG_PRETTY_FUNCTION;
+    return user_interface_origin::printState();
 }

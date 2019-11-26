@@ -4,12 +4,14 @@
 
 class user_interface_origin
 {
-    size_t m_state;
+    int m_state;
     void printState();
 
 public:
     user_interface_origin() : m_state{0} {};
     void hello();
+
+    friend class user_interface;
 };
 
 

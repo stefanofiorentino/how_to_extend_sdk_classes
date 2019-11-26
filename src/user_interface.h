@@ -1,10 +1,12 @@
 #ifndef HOW_TO_EXTEND_SDK_CLASSES_USER_INTERFACE_H
 #define HOW_TO_EXTEND_SDK_CLASSES_USER_INTERFACE_H
 
+#include "user_interface_origin.h"
 
 class user_interface
+        : public user_interface_origin
 {
-    size_t m_state;
+    int m_state;
     void printState();
 
 public:
