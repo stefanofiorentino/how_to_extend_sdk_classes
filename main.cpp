@@ -1,10 +1,14 @@
-#include <iostream>
-#include <memory>
+#include <cassert>
 #include "src/user_interface.h"
 
 int main()
 {
-    std::shared_ptr<user_interface> ui = std::make_shared<user_interface>();
-    ui->hello();
+    user_interface::setMAuth(3);
+
+    auto ui_ptr = user_interface::create(0);
+    ui_ptr->hello();
+    ui_ptr->printStateProxy();
+
+    assert(ui_ptr->getMAuth()==3);
     return 0;
 }

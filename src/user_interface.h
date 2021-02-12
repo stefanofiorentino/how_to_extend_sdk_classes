@@ -1,15 +1,27 @@
 #ifndef HOW_TO_EXTEND_SDK_CLASSES_USER_INTERFACE_H
 #define HOW_TO_EXTEND_SDK_CLASSES_USER_INTERFACE_H
 
+#include "user_interface_origin.h"
 
 class user_interface
+        : public user_interface_origin
 {
-    size_t m_state;
+    user_interface() : m_state{-1}{};
+
+    bool initialize(int state);
+
+    int m_state;
     void printState();
 
 public:
-    user_interface() : m_state{0} {};
-    void hello();
+    static std::unique_ptr<user_interface> create(int state);
+
+    void hello() final;
+
+    static int getMAuth();
+    static void setMAuth(int mAuth);
+
+    void printStateProxy();
 };
 
 

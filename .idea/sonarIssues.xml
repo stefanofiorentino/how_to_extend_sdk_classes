@@ -8,6 +8,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/defines.h">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dynamic_unique_ptr_cast.hpp">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/main.cpp">
           <value>
             <set />
@@ -19,6 +29,26 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/user_interface.h">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/user_interface_origin.cpp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/user_interface_origin.h">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/static_unique_ptr_cast.hpp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/how_to_extend_sdk_classes">
           <value>
             <set />
           </value>
